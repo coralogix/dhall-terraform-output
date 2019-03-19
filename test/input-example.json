@@ -1,0 +1,103 @@
+{
+  "aws_lb_data_application": {
+    "sensitive": false,
+    "type": "string",
+    "value": "arn:aws:elasticloadbalancing:us-east-1:123456:loadbalancer/app/staging-data-application/123abc"
+  },
+  "aws_lb_data_network": {
+    "sensitive": false,
+    "type": "string",
+    "value": "arn:aws:elasticloadbalancing:us-east-1:123456:loadbalancer/net/staging-data-network/123abc"
+  },
+  "aws_lb_web": {
+    "sensitive": false,
+    "type": "string",
+    "value": "arn:aws:elasticloadbalancing:us-east-1:123456:loadbalancer/app/staging-web/123abc"
+  },
+  "aws_vpc_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "vpc-123abc"
+  },
+  "aws_vpc_num_private_subnets": {
+    "sensitive": false,
+    "type": "string",
+    "value": "2"
+  },
+  "aws_vpc_num_utility_subnets": {
+    "sensitive": false,
+    "type": "string",
+    "value": "2"
+  },
+  "aws_vpc_private_subnet_azs": {
+    "sensitive": false,
+    "type": "list",
+    "value": [
+      "us-east-1a",
+      "us-east-1b"
+    ]
+  },
+  "aws_vpc_private_subnet_cidr_blocks": {
+    "sensitive": false,
+    "type": "list",
+    "value": [
+      "0.0.0.0/0",
+      "0.0.0.0/0"
+    ]
+  },
+  "aws_vpc_private_subnet_ids": {
+    "sensitive": false,
+    "type": "list",
+    "value": [
+      "subnet-123abc",
+      "subnet-123abc"
+    ]
+  },
+  "aws_vpc_private_subnet_nat_ids": {
+    "sensitive": false,
+    "type": "list",
+    "value": [
+      "nat-123abc",
+      "nat-123abc"
+    ]
+  },
+  "aws_vpc_utility_subnet_azs": {
+    "sensitive": false,
+    "type": "list",
+    "value": [
+      "us-east-1a",
+      "us-east-1b"
+    ]
+  },
+  "aws_vpc_utility_subnet_cidr_blocks": {
+    "sensitive": false,
+    "type": "list",
+    "value": [
+      "0.0.0.0/0",
+      "0.0.0.0/0"
+    ]
+  },
+  "aws_vpc_utility_subnet_ids": {
+    "sensitive": false,
+    "type": "list",
+    "value": [
+      "subnet-123abc",
+      "subnet-123abc"
+    ]
+  },
+  "kops_bastion_instance_profile_arn": {
+    "sensitive": false,
+    "type": "string",
+    "value": "arn:aws:iam::123456:instance-profile/path/to/instance/profile"
+  },
+  "kops_master_instance_profile_arn": {
+    "sensitive": false,
+    "type": "string",
+    "value": "arn:aws:iam::123456:instance-profile/path/to/instance/profile"
+  },
+  "kops_node_instance_profile_arn": {
+    "sensitive": false,
+    "type": "string",
+    "value": "arn:aws:iam::123456:instance-profile/path/to/instance/profile"
+  }
+}
