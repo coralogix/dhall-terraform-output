@@ -10,7 +10,7 @@ Supports Terraform `string` and `list` output only, producing `Natural`, `Text`,
 ## Install
 
 ```bash
-curl -sL https://raw.githubusercontent.com/coralogix/dhall-terraform-output/v0.1/dhall-terraform-output
+curl -sL https://raw.githubusercontent.com/coralogix/dhall-terraform-output/v0.1.0/dhall-terraform-output
 chmod +x dhall-terraform-output
 mv dhall-terraform-output /usr/local/bin/dhall-terraform-output
 ```
