@@ -108,8 +108,14 @@ function main() {
         echo "," >> "${OUT_FILE}"
     done
 
-    sed -i '' -e '$ d' "${TYPE_FILE}" # remove last line (the extra comma)
-    sed -i '' -e '$ d' "${OUT_FILE}" # remove last line (the extra comma)
+    # remove the last line (the extra comma)
+    if [[ $(uname -s) == "Darwin" ]]; then
+      sed -i '' -e '$ d' "${TYPE_FILE}"
+      sed -i '' -e '$ d' "${OUT_FILE}"
+    else
+      sed -e '$ d' -i "${TYPE_FILE}"
+      sed -e '$ d' -i "${OUT_FILE}"
+    fi
 
     echo "} : Type" >> "${TYPE_FILE}" # End type record
     echo "}" >> "${OUT_FILE}"  # End output record
